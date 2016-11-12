@@ -1,5 +1,24 @@
-body {
 
-	color: yellow;
-	background-color: blue;
+.nav{ 
+	background-color: #999999;
+	color: #198156;
+	list-style: none;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+.nav > li{
+	display: inline
+	padding: 0 25px 0 25px;
+}
+
+.nav > li >a:link{
+	text-decoration: none;
+	color: #4a9504;
+}
+
+#footer {
+	color: green;
+	font-size: 12px;
+	text-align: center;
 }
