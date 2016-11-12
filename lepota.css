@@ -1,11 +1,24 @@
-h1{
-	color: blue;
+
+.nav{ 
+	background-color: #999999;
+	color: #198156;
+	list-style: none;
+	text-align: center;
+	padding: 20px 0 20px 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: red;
+.nav > li{
+	display: inline
+	padding: 0 25px 0 25px;
+}
 
+.nav > li >a:link{
+	text-decoration: none;
+	color: #244901;
+}
+
+#footer {
+	color: green;
+	font-size: 12px;
+	text-align: center;
 }
