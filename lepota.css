@@ -7,7 +7,7 @@
 
 }
 .nav{ 
-	background-color: #999999;
+	background-color: #595959;
 	color: #198156;
 	list-style: none;
 	text-align: center;
@@ -17,9 +17,13 @@
 
 .nav > li{
 	display: inline;
-	padding: 25px;
+	padding: 20px;
 	color: #4a9504;
 
+}
+
+.nav > li:hover{
+	background-color: #999999;
 }
 
 .nav > li > a{
@@ -27,8 +31,23 @@
 	text-decoration: none;
 }
 
+.nav > li > a:hover{
+	background-color: #999999;
+	color: #ffffff;
+}
+
+#novosti{
+	width: 700px;
+	float: left;
+}
+
+#aside{
+	margin-left: 700px;
+}
+
 #footer {
-	color: green;
+	background-color: #595959;
+	color: #7B68EE;
 	font-size: 12px;
 	text-align: center;
 }
