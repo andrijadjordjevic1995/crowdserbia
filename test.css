@@ -1,0 +1,22 @@
+.nav{ 
+	background-color: #595959;
+	color: #198156;
+	list-style: none;
+	text-align: center;
+}
+
+.nav > li{
+	display: inline-block;
+	padding: 10px;
+	color: #4a9504;
+}
+
+.nav > li > a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
