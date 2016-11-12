@@ -1,4 +1,11 @@
-
+.cs{
+	max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    
+}
 .nav{ 
 	background-color: #999999;
 	color: #198156;
