@@ -13,6 +13,6 @@ $(document).ready(function(){
    $('ul#gallery li').on('mouseleave', function(){
    		$(this).append('<div class="overlay"></div>');
    		var overlay = $(this).children('.overlay');
-   		overlay.fadeOut(600);
+   		overlay.fadeOut(200);
    });
 });

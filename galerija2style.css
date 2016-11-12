@@ -1,8 +1,8 @@
 body{
 	margin:0;
 	padding:0;
+	background-image: url("images/back.jpg");
 }
-
 .container{
 	width:80%;
 	margin:auto;
@@ -11,22 +11,22 @@ body{
 #gallery{
 	list-style: none;
 	padding: 0;
-	margin:0;
+	margin:auto;
 	width: 100%;
 }
 #gallery li{
 	display: block;
 	float:left;
-	width:25%;
+	width:20%;
 	cursor:pointer;
 	border-radius: 5px;
 	box-sizing: border-box;
 	position:relative;
-	margin: 0 10px 10px 0;
+	margin: 10px 10px 0 0;
+
 }
 #gallery li:hover{
-	width:30%;
-
+	box-shadow: 2px 2px;
 }
 #gallery img{
 	width:100%;
@@ -37,7 +37,7 @@ body{
 	border-radius: 5px;
 }*/
 .nav{ 
-	background-color: #595959;
+	background-color: #0d0d0d;
 	color: #198156;
 	list-style: none;
 	text-align: center;
@@ -62,8 +62,9 @@ body{
 
 .overlay{
 	display:none;
-	background:#a6a6a6;
-	opacity: 0.2;
+	background-image: url("images/lightgrey.png");
+	/*background:#a6a6a6; jer opacity utice na text*/
+	opacity: 0.5;
 	color:#ffffff;
 	position:absolute;
 	top:0;
@@ -78,5 +79,4 @@ body{
 .overlay h3{
 	margin:0;
 	padding:0;
-
 }
