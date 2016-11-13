@@ -6,6 +6,7 @@
 
     <title>Crowd Serbia</title>
     <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
   <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
     <meta http-equiv="Content-Language" content="sr" />
@@ -41,8 +42,8 @@
           <li><a href="#">VESTI</a></li>
           <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">DOGAĐAJI<span class="caret"></span></a> 
             <ul class="dropdown-menu">
-              <li><a href="#">Na otvorenom</a></li>
-              <li><a href="#">Na zatvorenom</a></li>
+              <li><a id ="tag" href="#">Na otvorenom</a></li>
+              <li><a id ="tag" href="#">Na zatvorenom</a></li>
             </ul>
           </li>
           <li><a href="#">GALERIJA</a></li>
@@ -52,12 +53,51 @@
 
     </div>
 
-    <div>
+     <div class="row">
+        <div class="col-sm-4">
 
+          <div class="w3-content w3-display-container">
 
-    </div>
+            <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 
-    <div id = "footer" >
+            <div class="w3-display-container mySlides">
+            <img src="images/s1.jpg" style="width:100%">
+             <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+             Neki pevac
+            </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+            <img src="images/s2.jpg" style="width:100%">
+             <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+             drugi pevac
+            </div>
+            </div>
+
+          </div>
+          
+
+        </div>
+        <div class="col-sm-5">
+            <h3>Zanimljivosti</h3>
+        </div>
+        <div class="col-sm-3">
+          <h5>Ako zelis da budes u toku prijavi se na nasu mailing listu</h5>
+
+           <form name="myForm" onsubmit="return validateForm()">
+              <div class="form-inline">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required >
+              </div>
+    
+              <button type="submit" class="btn btn-success" id="button">Submit</button>
+           </form>
+
+        </div>
+      </div>
+
+    <div class = "footer" >
 
       <h4 class = "text-muted">Created by 4.april team</h4>
 
@@ -65,7 +105,53 @@
 
   </body>
 
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+   x[slideIndex-1].style.display = "block";  
+  }
+</script>
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+</script>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    alert("Uspesno ste se prijavili na mailing listu.");
+}
+</script>
 
 
 
