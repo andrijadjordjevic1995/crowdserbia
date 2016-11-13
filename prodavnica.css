@@ -65,7 +65,7 @@ body{
 
 .overlay{
 	display:none;
-	background-image: url("images/lightgrey.png");
+	background-image: url("images/cart.png");
 	/*background:#a6a6a6; jer opacity utice na text*/
 	opacity: 0.5;
 	color:#ffffff;

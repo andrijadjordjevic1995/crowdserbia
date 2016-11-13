@@ -7,14 +7,15 @@ $(document).ready(function(){
    		}
    		$(this).append('<div class="overlay"></div>');
    		var overlay = $(this).children('.overlay');
-   		overlay.html('<h3>'+title+'</h3>');
-   		overlay.fadeIn(800);
+   		//overlay.html('<h3>'+title+'</h3>');
+         overlay.fadeIn(100);
+   		
 
    });
    $('ul#gallery li').on('mouseleave', function(){
    		$(this).append('<div class="overlay"></div>');
    		var overlay = $(this).children('.overlay');
-   		overlay.fadeOut(200);
+         overlay.fadeOut(100);
    		overlay.remove();//spreci gomilanje overlay-ova
    });
 });

@@ -47,6 +47,12 @@ body{
 	color: #4a9504;
 }
 
-.caret:hover .dropdown-menu {
+/*.menu:hover .dropdown-menu {
     display: block;
+}*/
+.dropdown-toggle:hover{
+	display:block;
+}
+.dropdown-toggle li{
+	display:hidden;
 }
