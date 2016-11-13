@@ -1,15 +1,11 @@
-body{
-	margin:0;
-	padding:0;
-}
-div{
+html{
 	background: black;
-	color: #FFFFFF;
-	text-align: justify;
 }
 
-html{
-	background: #black;
+div{
+	background: black;
+	text-align: justify;
+	color: white;
 }
 
 .nav{ 
@@ -42,19 +38,24 @@ html{
 	color: #198156;
 }
 
-#button{
-	margin-top: 5%;
-	margin-left: 40%;
-}
-
 .footer{
 	text-align: center;
 }
 
-#tag{
-	color: #4a9504;
+.centered-div{
+	margin-left: 20%;
 }
 
-.tekst{
-	text-align: justify;
+.mymargin{
+	margin-left: 5%;
+}
+
+.addpadding{
+	padding: 2%;
+}
+
+table{
+	width: 100%;
+	margin-left: 40%;
+	margin-top: 20%;
 }
