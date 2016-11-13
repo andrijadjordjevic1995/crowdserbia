@@ -108,20 +108,22 @@ body{
 	border:1px solid #000000;
 }*/
 .cart{
+
 	display:inline-block;
 	vertical-align: top;
 	/*float:right;*/
 	float:left;
 	background:#ffffff;
 	width:100%;
-	heigth:300px;
-	margin:auto;
-	overflow:auto;
+	height:300px;
+	margin:30px 30px 30px 30px;
+	overflow: auto;
 }
 #cartlist{
 	list-style: none;
 	padding:0;
 	margin:auto;
+
 	width:90%;
 
 }
@@ -130,7 +132,7 @@ body{
 #cartlist li{
 	display: block;
 	float:left;
-	width:10%;
+	width:50%;
 	cursor:pointer;
 	border-radius: 5px;
 	box-sizing: border-box;
@@ -146,3 +148,18 @@ body{
 	width:100%;
 	border-radius: 5px;
 }
+#cartlist li{
+	display: block;
+}
+/*#tabela{/*display table cell
+	border-bottom: 5px black;
+	padding-bottom:20px;
+}
+table, th, td{
+	border-bottom: 5px black;
+	padding-bottom:20px;
+	border-spacing: 20px;
+}
+th{
+	height: 150px;
+}*/

@@ -43,8 +43,20 @@ $(document).ready(function(){
       if(lager == str){
 
       }else{
-         $('#cartlist').append('<li><a href='+title+'><img src ='+title+' ></a></li>');
-         $('.cart').fadeIn(500);
+         $('#cartlist').append('<li title = "Ukloni iz korpe" id ='+title+'><a href="#"><img src ='+title+'></a></li>');
+      //  $('#tabela').append('<tr><td><a href='+title+'><img width=40% src ='+title+' ></a></li></td></tr>');
+        //$('#tabela').append('<tr></tr>');
+        // $('.cart').fadeIn(500);
+        /*for (i = 0; i <  $('#cartlist li').length; i++) { 
+            if()
+         }
+        $('#cartlist li').css("display", "block")*/
       }
    });
+   //$('#cartlist li').click(function(event){
+      //$('#'+event.target.id).css("visibility", "hidden");
+     // $('#'+this.id).remove();
+     //$(this).remove();
+     // $(el).parentNode.removeChild(el);
+   //});
 });
