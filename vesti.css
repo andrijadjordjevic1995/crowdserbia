@@ -1,0 +1,61 @@
+html{
+	background: black;
+}
+
+div{
+	background: black;
+	text-align: justify;
+	color: white;
+}
+
+.nav{ 
+	background-color: #0d0d0d;
+	color: #4a9504;
+	list-style: none;
+	text-align: center;
+	background-color: #0d0d0d;
+	max-width: 100%;
+}
+
+.nav > li{
+	display: inline-block;
+	padding: 1%;
+	color: #4a9504;
+}
+
+.nav > li > a{
+	color: #4a9504;
+	text-decoration: none;
+
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu{
+	color: #198156;
+}
+
+.footer{
+	text-align: center;
+}
+
+.centered-div{
+	margin-left: 20%;
+}
+
+.mymargin{
+	margin-left: 5%;
+}
+
+.addpadding{
+	padding: 2%;
+}
+
+table{
+	width: 100%;
+	margin-left: 40%;
+	margin-top: 20%;
+}
