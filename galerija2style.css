@@ -4,9 +4,11 @@ body{
 	background-image: url("images/back.jpg");
 }
 .container{
+	float:right;
+	clear:left;
 	width:80%;
 	margin:auto;
-	overflow:auto; 
+	overflow:auto;
 }
 #gallery{
 	list-style: none;
@@ -27,6 +29,7 @@ body{
 }
 #gallery li:hover{
 	box-shadow: 2px 2px;
+	/*width:25%;*/
 }
 #gallery img{
 	width:100%;
