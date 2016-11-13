@@ -47,7 +47,7 @@
             </ul>
           </li>
           <li><a href="galerija2.html">GALERIJA</a></li>
-          <li><a href="#">PRODAVNICA</a></li>
+          <li><a href="prodavnica.html">PRODAVNICA</a></li>
         
         </ul>
 
@@ -80,10 +80,31 @@
 
         </div>
         <div class="col-sm-5">
-            <h3>Zanimljivosti</h3>
+            <h3>Manu Chao La Ventura na ovogodišnjem Lake Festu!</h3>
+            <br />
+            <div class="tekst">
+                <p><img src="images/manu chao.jpe" alt="Manu Chao" align="left" height="200" width="150">Pozicioniran kao jedan od najvećih muzičkih festivala u regionu sa posebnim kulturološkim pečatom Lake Fest je dao doprinos povećan om interesovanju inostranih gostiju za prisustvo na festivalu, ali I pojačanom interesovanju za grad Nikšić i uopšte Crnu Goru. Tokom pet godina postojanja LAKE FEST je ugostio: Laibach, Guano Apes, Riblju čorbu, Babe, Orthodox Celts-e, Bjesove, Gobilne, Elemental, Dubiozu kolektiv i mnoge druge izvođače.
+                Zato, ovogodišnji Lake Fest traje 4 dana u periodu od 11. do 14. avgusta! LAKE FEST 2016 je pripremio mnoga iznenađenja i ono što je zadržao jeste želja da svake godine za redom ispuni očekivanja publike.<a href="#"> Prikazi ceo tekst--></a></p>
+
+            </div>
+
+           
+
         </div>
         <div class="col-sm-3">
           <h5>Ako zelis da budes u toku prijavi se na nasu mailing listu</h5>
+
+          <div class="checkbox">
+             <label><input type="checkbox" value="rock and roll" name="music">rock and roll</label>
+          </div>
+          <div class="checkbox">
+             <label><input type="checkbox" value="pop" name="music">pop</label>
+          </div>
+          <div class="checkbox">
+             <label><input type="checkbox" value="ex yu" name="music">ex yu</label>
+          </div>
+
+
 
            <form name="myForm" onsubmit="return validateForm()">
               <div class="form-inline">
@@ -149,10 +170,32 @@ function validateForm() {
         alert("Name must be filled out");
         return false;
     }
+    var txt = getData();
     alert("Uspesno ste se prijavili na mailing listu.");
+    alert(txt);
+
 }
 </script>
 
+<script type="text/javascript">
+  function getData(){
+
+                var a = [];
+                $.each($("input[name='music']:checked"), function(){            
+
+                  a.push($(this).val());
+
+                });
+
+                var data = "mail: "+  $("#email").val().toString() + " zanrovi: " +
+                            " " + a.toString();
+
+
+    return data;
+  
+}
+
+</script>
 
 
 

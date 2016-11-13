@@ -7,7 +7,6 @@
     <title>CrowdSerbia - Prodavnica</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="prodavnica.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
   <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
     <meta http-equiv="Content-Language" content="sr" />
@@ -26,7 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/jprodavnica.js"></script>
-     <script src="js/lightbox.js"></script>
+   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
@@ -50,27 +49,29 @@
             </ul>
           </li>
           <li><a href="galerija2.html">GALERIJA</a></li>
-          <li><a href="#">PRODAVNICA</a></li>
+          <li><a href="prodavnica.html">PRODAVNICA</a></li>
         
         </ul>
 
     </div>
-    <section>
-    	<div class = "container">
+    <div class="row">
+    	<div class = "col-sm-10 container">
     	<ul id = "gallery">
-    		<li><a href="images/s1.jpg"" data-title="Prodigy" data-lightbox="live"><img src="images/s1.jpg"></a></li>
-    		<li><a href="images/s2.jpg"" data-title="Smak" data-lightbox="live"><img src="images/s2.jpg"></a></li>
-    		<li><a href="images/s3.jpg"" data-title="Gramatik" data-lightbox="live"><img src="images/s3.jpg"></a></li>
-    		<li><a href="images/s4.jpg"" data-title="Big Gigantic" data-lightbox="live"><img src="images/s4.jpg"></a></li>
-    		<li><a href="images/s5.jpg"" data-title="Griz" data-lightbox="live"><img src="images/s5.jpg"></a></li>
-    		<li><a href="images/s6.jpg"" data-title="Parliament-Funkadelic" data-lightbox="live"><img src="images/s6.jpg"></a></li>
-    		<li><a href="images/s7.jpg"" data-title="BB King" data-lightbox="live"><img src="images/s7.jpg"></a></li>
-    		<li><a href="images/s8.jpg"" data-title="Aesop Rock" data-lightbox="live"><img src="images/s8.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima" data-title="images/s1.jpg"><img src="images/s1.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima"><img src="images/s2.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="nema"><img src="images/s3.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima"><img src="images/s4.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima"><img src="images/s5.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="nema"><img src="images/s6.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima"><img src="images/s7.jpg"></a></li>
+    		<li title="Dodaj u korpu"><a href="#" data-lager="ima"><img src="images/s8.jpg"></a></li>
     	</ul>
 
    		</div>
-   		
-   </section>
-    
+   
+      <div class= "col-sm-2 cart">
+        <ul id = "cartlist"></ul>
+      </div>
+    </div>
   </body>
 </html>
