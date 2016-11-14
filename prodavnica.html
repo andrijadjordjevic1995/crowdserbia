@@ -27,6 +27,20 @@
     <script src="js/jprodavnica.js"></script>
    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+      function kupi(){
+
+        var count = $("#korpa li").length;
+
+        if(count==0)
+          alert("Vasa korpa je prazna, molimo vas odaberite postere.");
+        else
+          alert("Uspesno ste obavili kupovinu!");
+
+      }
+
+    </script>
 
   </head>
 
@@ -49,7 +63,7 @@
 
     </div>
     <div class="row">
-    	<div class = "col-sm-9 container">
+    	<div class = "col-sm-10 container">
     	<ul id = "gallery">
     		<li title="Dodaj u korpu"><a href="#" data-lager="ima" data-title="images/s1.jpg" data-opis="aaa"><img src="images/s1.jpg"></a></li>
     		<li title="Dodaj u korpu"><a href="#" data-lager="ima" data-title="images/s2.jpg" data-opis="aaa"><img src="images/s2.jpg"></a></li>
@@ -63,16 +77,18 @@
 
    		</div>
    
-      <div class= "col-sm-2 cart">
+      <div class= "col-sm-2 cart" id="korpa">
         <ul id = "cartlist">
-          <h3>Korpa</h3>
+          <h3>Korpa:</h3>
         </ul>
         <!--<ul id = "cartlist"></ul>
          <table id="tabela">
           <caption>Korpa</caption>
         </table>-->
-       
+
       </div>
+       <button type="submit" onclick="kupi()" class="btn btn-success" id="button">Kupi</button>
+
     </div>
   </body>
 </html>
