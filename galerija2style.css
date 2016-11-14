@@ -1,14 +1,18 @@
 body{
 	margin:0;
 	padding:0;
-	background-image: url("images/back.jpg");
+	background:black;
+}
+html{
+	background: black;
 }
 .container{
 	float:right;
 	clear:left;
-	width:80%;
+	width:100%;
 	margin:auto;
 	overflow:auto;
+	background:black;/*dodato*/
 }
 #gallery{
 	list-style: none;

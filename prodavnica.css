@@ -9,7 +9,11 @@ div{
 body{
 	margin:0;
 	padding:0;
+<<<<<<< HEAD
 	background: black;
+=======
+	background:black;
+>>>>>>> 08c6787113d89da85ef946ce1d21ad021404d2ff
 }
 .container{
 	/*float:right;*/
@@ -115,12 +119,16 @@ body{
 	border:1px solid #000000;
 }*/
 .cart{
-
+	
 	display:inline-block;
 	vertical-align: top;
 	/*float:right;*/
 	float:left;
+<<<<<<< HEAD
 	background:#0d0d0d;
+=======
+	background:#fff;
+>>>>>>> 08c6787113d89da85ef946ce1d21ad021404d2ff
 	width:100%;
 	height:350px;
 	margin:10px 0 0 0;
