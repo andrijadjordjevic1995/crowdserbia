@@ -176,6 +176,8 @@ function validateForm() {
         return false;
     }
     var txt = getData();
+    if(txt==null)
+      return;
     alert("Uspesno ste se prijavili na mailing listu.");
     alert(txt);
 
@@ -192,6 +194,11 @@ function validateForm() {
 
                 });
 
+                if(a.length==0){
+                  alert("Morate izabrati zanr.")
+                  return null;
+                }
+
                 var data = "mail: "+  $("#email").val().toString() + " zanrovi: " +
                             " " + a.toString();
 
@@ -201,7 +208,5 @@ function validateForm() {
 }
 
 </script>
-
-
 
 </html>
